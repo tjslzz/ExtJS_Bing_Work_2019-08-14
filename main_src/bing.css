@@ -1,9 +1,25 @@
-#mask{
+#mask {
     position: absolute;
     display: none;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
+}
+
+#header div {
+    background: none;
+    border: none;
+    height:150px;
+}
+.bing_header{
+    float: right;
+    opacity: .8;
+    line-height: 40px !important;
+    color: #fff;
+    font-family: Arial,Helvetica,Sans-Serif;
+    margin-left: 50px;
+    margin-left: 50px;
+    text-decoration: none;
 }
 
 .bing_input {

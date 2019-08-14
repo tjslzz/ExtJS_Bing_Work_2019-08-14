@@ -51,7 +51,7 @@ BingPanel = Ext.extend(Ext.util.Observable, {
 });
 let bingPaenlArray = [new BingPanel({ title: '国内版' }).info(), new BingPanel({ title: '国际版' }).info()]
 let bingPanels = new Ext.TabPanel({
-    columnWidth: .4,
+    columnWidth: .35,
     activeTab: 0,
     items: bingPaenlArray,
     plain: true,
