@@ -1,0 +1,57 @@
+#mask{
+    position: absolute;
+    display: none;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.bing_input {
+    border: 0px;
+    font-size: 20px;
+}
+
+.x-tab-panel-bwrap {
+    margin-left: 2px !important;
+}
+
+.bing_button button {
+    width: 50px !important;
+    height: 40px !important;
+    float: right;
+}
+
+.bing_panels {
+    box-shadow: 0 2px -4px rgba(0, 0, 0, .3);
+    border-radius: 6px;
+}
+
+.bing_panels div {
+    border: 0px;
+    border-radius: 6px;
+}
+
+.x-tab-strip-spacer {
+    display: none !important;
+}
+
+.bing_panels span {
+    font-size: 16px !important;
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif !important;
+}
+
+.bing_panels li {
+    transform: scale(1.1, 1.2) perspective(.3em) rotateX(2deg);
+    transform-origin: bottom left;
+    padding: 5px 17px;
+    background: #dfe1da;
+}
+
+.x-tab-strip-active {
+    background-color: #fff !important;
+}
+
+.x-tab-strip-over {
+    color: rgba(70, 70, 70, .8) !important;
+    background: #dfe9da !important;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bing HomeWork</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/ext-all.css" />
+    <link rel="stylesheet" type="text/css" href="bing.css" />
+    <script type="text/javascript" src="../static/ext-base.js"></script>
+    <script type="text/javascript" src="../static/ext-all.js"></script>
+    <script type="text/javascript" src="middle.js"></script>
+    <script>
+        Ext.onReady(function () {
+            //出口
+            let bingView = new Ext.Viewport({
+                autoScroll: true,
+                style: "background-image: url('background.jpg')",
+                html: "<div id='mask'></div><div id = 'bing'></div>"
+            })
+            bingView.show()
+            //头
+            let bingHeader = new Ext.Container({
+                html: "<div style = 'min-height:150px;'></div>"
+            });
+            
+            let bingFooter = new Ext.Container({});
+            //主类
+            let bing = new Ext.Container({
+                renderTo: 'bing',
+                layout: 'anchor',
+                items: [bingHeader, bingMiddle, bingFooter]
+            });
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
