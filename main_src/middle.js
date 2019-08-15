@@ -17,22 +17,31 @@ let fieldConfig = {
     height: 50,
     cls: 'bing_input',
     listeners: {
-        render: function(p) {
-            p.getEl().on('click', ()=>{
-                document.getElementById("mask").style='display:block';
+        render: function (p) {
+            p.getEl().on('click', () => {
+                document.getElementById("mask").style = 'display:block';
             });
-            p.getEl().on('mouseout', ()=>{
-                document.getElementById("mask").style='display:none';
+            p.getEl().on('mouseout', () => {
+                document.getElementById("mask").style = 'display:none';
             });
         },
-        single: true  // Remove the listener after first invocation
+        single: true
     }
 }
+Search = function () {
+    this.init = function (cmp) {
+        console.log(cmp);
+    };
+};
+Ext.preg('searchPlugin', Search);
 let buttonConfig = {
     columnWidth: .2,
     xtype: 'button',
     icon: 'search.png',
-    cls: 'bing_button'
+    cls: 'bing_button',
+    handler: (cmp) => {
+        Ext.Msg.alert("搜索内容", cmp.previousSibling().getValue())
+    }
 }
 let searchField = {
     layout: 'column',
